@@ -1,0 +1,30 @@
+[project]
+name = "video-to-article"
+version = "0.1.0"
+description = "Turn YouTube videos into articles using subtitles and AI (OpenAI or local MLX)."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "markdown>=3.10.1",
+    "openai>=2.17.0",
+    "python-dotenv>=1.2.1",
+    "typer>=0.21.1",
+    "yt-dlp[default,curl-cffi]>=2026.2.4",
+]
+
+[project.optional-dependencies]
+mlx-lm = [
+    "mlx-lm>=0.30.6",
+]
+
+[project.urls]
+Homepage = "https://github.com/n-splv/video-to-article"
+Repository = "https://github.com/n-splv/video-to-article"
+
+[project.scripts]
+v2a = "video_to_article.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
