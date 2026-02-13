@@ -16,7 +16,9 @@ For local models (MLX on Apple Silicon):
 pip install video-to-article[mlx-lm]
 ```
 
-Or from source with [uv](https://docs.astral.sh/uv/): `uv sync` then `uv run v2a ...`.
+On M3 Pro Mac we recommend the **Qwen/Qwen3-8B** model: `v2a <url> -m Qwen/Qwen3-8B`.
+
+You can also install from source with [uv](https://docs.astral.sh/uv/): `uv sync` then `uv run v2a ...`.
 
 ## Setup
 
