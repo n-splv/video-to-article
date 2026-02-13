@@ -1,8 +1,9 @@
 # video-to-article
+<img src="docs/images/logo.png" width="100" alt="video-to-article" />
 
 Turn YouTube videos into articles: downloads subtitles and description with [yt-dlp](https://github.com/yt-dlp/yt-dlp), then uses an AI model to draft an article and optionally add a critical review section. Output is saved as HTML (and intermediate files) under a per-video directory.
 
-**Mac users new to the command line:** see [MAC_SETUP.md](MAC_SETUP.md) for installing Python, Homebrew, and running the tool in Terminal.
+**Mac users new to the command line:** see [MAC_SETUP.md](docs/MAC_SETUP.md) for installing Python, Homebrew, and running the tool in Terminal.
 
 ## Install
 
